@@ -1,0 +1,619 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #fcfaf1;
+    color: #333;
+}
+
+header {
+    padding: 1.5% 5%;
+    background-color: #797362;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-image {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 4px;
+}
+
+.nav-start {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+       .simple-link {
+            color: #d6cdcd;
+            position: relative;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 550;
+            display: inline-block;
+        }
+
+        .simple-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #FEFEFE;
+            transition: width 0.3s ease;
+        }
+
+        .simple-link:hover {
+            color: #FEFEFE;
+        }
+
+        .simple-link:hover::after {
+            width: 100%;
+        }
+.nav-middle {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Linkler arasında boşluk */
+}
+
+.nav-end {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #4A4A4A;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'montserrat';
+    font-weight: 450;
+}
+
+footer p {
+    color: white;
+    font-size: smaller;
+}
+
+.navbar-icons {
+    margin-left: auto;
+}
+
+
+.content {
+    padding: 6%;   
+}
+
+.baslik-div {
+    margin: 10% 0 15% 0%;
+}
+
+.start-content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    white-space: nowrap;
+    font-size: 3.4vw;
+    font-family: 'montserrat';
+    color: #f3bb72;
+}
+
+.main-text {
+    font-size: 1.2vw;
+    color: #503c3c;
+}
+
+.ortak-div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.main-box {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-box-image-box {
+    width: 50%;
+    margin-left: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box-image {
+    width: 100%; 
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-box-title {
+    font-size: 2.5vw;
+    color: rgb(43, 43, 43);
+    font-weight: 450;
+    font-family: 'montserrat';
+
+}
+
+.main-box-ara-baslik {
+    font-size: 2vw;
+    color: rgb(48, 48, 48);
+    font-weight: 450;
+    font-family: 'montserrat';
+
+}
+
+.main-box-text {
+    font-size: 1.2vw;
+    color: rgb(73, 73, 73);
+}
+
+.main-box-text-large {
+    font-size: 1.5vw;
+    color: rgb(73, 73, 73);
+}
+
+.main-box-list {
+    font-size: 1.5vw;
+    color: rgb(73, 73, 73);
+}
+
+.giris-text {
+    font-size: 1.5vw;
+    color: rgb(73, 73, 73);
+}
+
+.href-icin-text {
+    text-decoration: none;
+    color: #87bb78;
+    font-size: 1.7vw;
+}
+
+.footer-group {
+    justify-content: space-around;
+    display: flex;
+}
+
+.footer-section a {
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    text-decoration: none;
+    color: rgb(195, 195, 195);
+    transition: color 0.2s ease-in;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+
+.biyografi-title {
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: 2.8vw;
+    color: #f3bb72;
+    font-weight: 600;
+    font-family: 'montserrat';
+
+}
+
+.biyografi-ara-baslik {
+    font-size: 1.5vw;
+    color: rgb(48, 48, 48);
+    font-family: 'montserrat';
+    font-weight: 450;
+}
+
+.biyografi-text {
+    font-size: 1.2vw;
+    color: rgb(73, 73, 73);
+    text-align: left;
+
+}
+
+.biyografi-content {
+    margin: 10%;
+}
+
+.biyografi-ortak-text-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.biyografi-text-box {
+    margin-bottom: 30%;
+}
+
+.biyografi-box-title {
+    text-align: start;
+}
+
+.svg-icons {
+    width: 5vw;
+    height: 5vw;
+    font-size: 5vw;
+}
+
+.yt-kismi {
+    background-color: #87bb78;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.gap-item {
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-item {
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #4A3F35;
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-item:hover {
+    transform: scale(1.1);
+}
+
+.instagram:hover { background-color: #E4405F; }
+.youtube:hover { background-color: #FF0000; }
+.twitter:hover { background-color: #14171A; }
+.facebook:hover { background-color: #1877F2; }
+.mail:hover { background-color: #f2a60c; }
+
+.ortak-item-for-iletisim {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.video-container {
+    position: relative;
+    max-width: 50%; /* Sayfanın %80'ini kaplasın */
+    margin: auto; /* Ortalasın */
+    padding-bottom: 28%; /* Yüksekliği biraz azalt */
+    height: 0;
+    margin-top: 2em;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 2% 3%;
+    }
+    
+    .icon-image {
+        width: 3em;
+        height: 3em;
+    }
+    
+    .nav-middle {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Linkler arasında boşluk */
+    }
+    
+    .nav-end {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    nav a {
+        font-size: 0.8em;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    footer {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background: #4A4A4A;
+        color: white;
+        padding: 50px;
+        text-align: center;
+        margin-bottom: 0;
+        font-family: 'montserrat';
+    }
+
+    .content {
+        margin-top: 15%;
+        padding: 5%;   
+    }
+
+    .main-title {
+        white-space: nowrap;
+        font-size: 2.1em;
+        font-family: 'montserrat';
+        color: #f3bb72;
+    }
+    
+    .main-text {
+        font-size: 0.7em;
+        color: #503c3c;
+    }
+    
+    .ortak-div {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10%;
+    }
+    
+    .main-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .main-box-image-box {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-box-image {
+        width: 100%; 
+        height: auto;
+        border-radius: 5px;
+        object-fit: cover;
+        
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .main-box-title {
+        font-size: 1.3em;
+        color: rgb(43, 43, 43);
+        font-weight: 450;
+        font-family: 'montserrat';
+    
+    }
+    
+    .main-box-ara-baslik {
+        font-size: 1.3em;
+        color: rgb(48, 48, 48);
+        font-weight: 450;
+        font-family: 'montserrat';
+    
+    }
+    
+    .main-box-text {
+        font-size: 0.8em;
+        color: rgb(73, 73, 73);
+    }
+    
+    .main-box-text-large {
+        font-size: 0.9em;
+        color: rgb(73, 73, 73);
+    }
+    
+    .main-box-list {
+        font-size: 0.9em;
+        color: rgb(73, 73, 73);
+    }
+    
+    .giris-text {
+        font-size: 0.9em;
+        color: rgb(73, 73, 73);
+    }
+    
+    .href-icin-text {
+        text-decoration: none;
+        color: #87bb78;
+        font-size: 0.9em;
+    }
+    
+    .footer-group {
+        justify-content: space-around;
+        display: flex;
+    }
+    
+    .footer-section a {
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: flex;
+        text-decoration: none;
+        color: rgb(195, 195, 195);
+        transition: color 0.2s ease-in;
+    }
+    
+    .footer-section a:hover {
+        color: white;
+    }
+    
+    
+    .biyografi-title {
+        margin-bottom: 1%;
+        text-align: center;
+        font-size: 1.8em;
+        color: #f3bb72;
+        font-weight: 600;
+        white-space: nowrap;
+        font-family: 'montserrat';
+    
+    }
+    
+    .biyografi-ara-baslik {
+        font-size: 1em;
+        color: rgb(48, 48, 48);
+        font-family: 'montserrat';
+        font-weight: 450;
+    }
+    
+    .biyografi-text {
+        font-size: 1.75em;
+        color: rgb(73, 73, 73);
+        text-align: left;
+    
+    }
+    
+    .biyografi-content {
+        margin: 10%;
+    }
+    
+    .biyografi-ortak-text-box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .biyografi-text-box {
+        margin-bottom: 30%;
+    }
+    
+    .biyografi-box-title {
+        text-align: start;
+    }
+    
+    .svg-icons {
+        width: 5vw;
+        height: 5vw;
+        font-size: 3em;
+    }
+    
+    .yt-kismi {
+        background-color: #87bb78;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    
+    .gap-item {
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+    
+    .social-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .social-item {
+        width: 1.75em;
+        height: 1.75em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #4A3F35;
+        color: white;
+        font-size: 2em;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .social-item:hover {
+        transform: scale(1.1);
+    }
+    
+    .instagram:hover { background-color: #E4405F; }
+    .youtube:hover { background-color: #FF0000; }
+    .twitter:hover { background-color: #14171A; }
+    .facebook:hover { background-color: #1877F2; }
+    .mail:hover { background-color: #f2a60c; }
+    
+    .ortak-item-for-iletisim {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }    
+    .video-container {
+        position: relative;
+        max-width: 100%; /* Sayfanın %80'ini kaplasın */
+        margin: auto; /* Ortalasın */
+        padding-bottom: 58%; /* Yüksekliği biraz azalt */
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
