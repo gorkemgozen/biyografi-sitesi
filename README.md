@@ -22,8 +22,13 @@ Site sadece HTML5 ve CSS kullanılarak oluşturulmuştur. **JavaScript içermeme
 ### _app/views Klasörü İçerisindeki Dosyaların Yapısı
 - **./app/views/pages** bünyesinde sayfaların basitçe HTML içerikleri vardır. **Buradaki dosyaların *.ejs* formatlı olması zorunludur.**  
 - **./app/views/partials** klasörü içerisinde sitenin Footer ve Navbar dosyaları yer alır.  
-- **./app/views/routes** klasörü içerisindeki dosyalar bize bahsi geçen sayfanın Title taginde yer alacak yazıyı ve sayfanın dosya konumunu sağlamaktadır.  
-## 📃 Yeni Sayfa Eklemek için
+- **./app/views/routes** klasörü içerisindeki dosyalar bize bahsi geçen sayfanın Title taginde yer alacak yazıyı ve sayfanın dosya konumunu sağlamaktadır.
+
+## 🔧 Siteyi Nasıl Çalıştırabilirsiniz
+1. Projenin kök klasöründe CMD'yi açıp **node server.js** yazarak 80 portunda çalıştırabilirsiniz.
+2. Eğer 80 Portunda çalıştırmak istemiyorsanız *./server.js* dosyasını editleyerek istediğiniz portta çalıştırabilirsiniz 
+
+## 📃 Yeni Sayfa Nasıl Eklenir
 1. **./server.js** dosyası içerisinde yeni sayfa route tanımlıyoruz.  
 2. **./_app/pages** içerisine yapacağımız sayfanın *.ejs* formatında HTML tasarımını yapıyoruz.  
 3. **./app/routes** içine yeni dosya oluşturuyoruz. Ardından diğer route dosyalarındaki kod yapısını oluşturduğumuz dosyaya yapıştırıp *title* kısmını ekleyeceğimiz sayfa adı yapıyoruz ve *content* kısmına *.ejs* şeklinde tasarımın dosya konumunu giriyoruz. 
