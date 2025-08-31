@@ -1,12 +1,11 @@
 const express = require("express");
-const path = require('path');
+const path = require("path");
 const app = express();
-const port = 80;
 
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "_app", "views"));
 
-app.use(express.static(path.join(__dirname, '_app', 'immutable')));
+app.use(express.static(path.join(__dirname, "_app", "immutable")));
 
 const homeRoute = require("./_app/views/routes/home");
 const aboutRoute = require("./_app/views/routes/about");
@@ -16,7 +15,4 @@ app.use("/", homeRoute);
 app.use("/hakkimda", aboutRoute);
 app.use("/iletisim", contactRoute);
 
-// Sunucuyu başlat
-app.listen(port, () => {
-    console.log(`Sunucu http://localhost:${port} adresinde çalışıyor.`);
-});
+module.exports = app;
